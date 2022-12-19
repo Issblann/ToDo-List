@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&display=swap");
+
+:root {
+  --background: #181d31;
+  --buttons: #678983;
+  --color-fondo-input: #e6ddc4;
+  --color-input: #e6ddc4;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: var(--background);
+  color: var(--color-input);
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 15px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.title {
+  font-size: 50px;
+}
+form {
+  width: 90%;
+}
+.container-inputs {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: auto;
+  padding: 10px;
+  max-width: 800px;
+}
+
+.input-task {
+  width: 382px;
+  height: 42px;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.button-add {
+  padding: 10px;
+  width: 100px;
+  border: none;
+  background: var(--buttons);
+  color: white;
+  border-radius: 20px;
+}
+
+.task-list {
+  width: 90%;
+  max-width: 526px;
+  border-radius: 10px;
+  padding: 10px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+li {
+  color: black;
+  background: var(--color-fondo-input);
+  padding: 20px;
+  padding-left: 30px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.trash-button {
+  color: var(--buttons);
+}
+.deleteAll-button {
+  width: 300px;
+  height: 50px;
+  background: var(--buttons);
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+.hidden {
+  visibility: hidden;
+}
